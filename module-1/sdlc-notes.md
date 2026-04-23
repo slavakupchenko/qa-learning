@@ -46,3 +46,18 @@ QA role: regression testing with every update.
 | Sign-off | QA confirms product is ready for release |
 | Blocker | A critical bug that stops testing or usage |
 | Test Environment | A separate system used for testing (not production) |
+
+## Types of Testing
+
+| Type | When to use | Purpose |
+|------|-------------|---------|
+| Smoke Test | After every deploy | Is the app alive? |
+| Sanity Test | After a specific fix | Does this feature work? |
+| Regression Test | After any code change | Did we break anything old? |
+| Functional Test | During development | Does the feature match requirements? |
+| Integration Test | When components connect | Do parts work together? |
+| End-to-End Test | Final verification | Does the full user journey work? |
+
+## Key Concept: Regression
+When a developer fixes bug A and accidentally breaks feature B.
+QA catches this by running a full Regression Test Suite after every change.
